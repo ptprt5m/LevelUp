@@ -1,0 +1,19 @@
+@import "__variables.scss";
+@import "__mixins.scss";
+
+//Common styles
+
+html {
+	box-sizing: border-box;
+}
+
+*, *::before, *::after {
+	box-sizing: inherit;
+}
+
+.wrapper {
+	max-width: 1140px;
+	height: auto;
+	margin: 0 auto;
+}
+
