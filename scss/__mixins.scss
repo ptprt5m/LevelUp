@@ -42,6 +42,7 @@
 @mixin links($opacity: 75%, $tr: .3s all) {
 	&:hover, &:active, &:focus {
 		opacity: $opacity;
+		@content;
 	}
 	cursor: pointer;
 	text-decoration: none;
