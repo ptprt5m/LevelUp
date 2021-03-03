@@ -6,6 +6,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>webSite</title>
 	<link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
 	<link rel="stylesheet" href="css/fonts.css">
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/screen.css">
@@ -17,11 +19,11 @@
             <div class="header__wrapper">
                 <nav class="header__nav">
                     <ul>
-                        <li><a href="#!">Home</a></li>
-                        <li><a href="#!">Composition</a></li>
-                        <li><a href="#!">Reviews</a></li>
-                        <li><a href="#!">Promo</a></li>
-                        <li><a href="#!">To order</a></li>
+                        <li><a href="#Home" class="header__link js-scroll">Home</a></li>
+                        <li><a href="#Composition" class="header__link js-scroll">Composition</a></li>
+                        <li><a href="#Reviews" class="header__link js-scroll">Reviews</a></li>
+                        <li><a href="#Promo" class="header__link js-scroll">Promo</a></li>
+                        <li><a href="#toOrder" class="header__link js-scroll">To order</a></li>
                     </ul>
                 </nav>
             </div>
@@ -29,7 +31,7 @@
     </header>
 
 	<main>
-		<section class="about">
+		<section class="about" id="Home">
             <div class="wrapper">
                 <div class="about__wrapper">
                     <h1 class="title">LevelUp</h1>
@@ -42,19 +44,19 @@
                             <p class="subtitle">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum dolore consequatur velit corrupti, animi laboriosam qui, optio non recusandae obcaecati facilis blanditiis neque? Ullam aspernatur fuga illo. Temporibus, corrupti ratione?</p>
                         </div>
                     </div>
-                    <a href="#!" class="toOrderButton">Заказать</a>
+                    <a href="#toOrder" class="toOrderButton">Заказать</a>
                 </div>
             </div>
         </section>
 
-        <section class="composition">
+        <section class="composition" id="Composition">
             <div class="wrapper">
                 <div class="composition__wrapper">
                     <h3 class="title">Состав</h3>
                     <div class="composition__info">
                         <div class="composition__info-items">
                             <div class="composition__info-item">
-                                <img class="composition__info-productsImg" src="https://lh3.googleusercontent.com/proxy/pWONeibZ6_0Qdcummyeccgd3EMN1XJ6aLmuZ9NN5EubJrgB4M15cVN7aI_ZDpC0P8aW_hw9eKQSJtdSAAUCOxuLUBY5sJl4zS2gomyT8riAmJg" alt="Кумыс">
+                                <img class="composition__info-productsImg" src="http://img-fotki.yandex.ru/get/23/mityan.e/0_9c67_516bd752_L.jpg" alt="Кумыс">
                                 <p class="subtitle">Кумыс</p>
                             </div>
                             <div class="composition__info-item">
@@ -86,15 +88,84 @@
             </div>
         </section>
 
-        <section class="reviews">
+        <section class="reviews" id="Reviews">
             <div class="wrapper">
                 <div class="reviews__wrapper">
                     <h3 class="title">Отзывы</h3>
-                    <div class="reviews__items">
+                    <div class="reviews__items owl-carousel reviews-slider">
                         <div class="reviews__item">
-                            <p class="subtitle">
+                            <div class="reviews__item-user">
+                                <img class="reviews__item-user_img" src="http://2.bp.blogspot.com/_YGoTmo9CJcw/TRSMb1zSmoI/AAAAAAAAABo/ZDcNUBZ074A/s1600/244-1.jpg" alt="Гопник">
+                                <p class="subtitle">Константин Викторович</p>
+                            </div>
+                            <img class="reviews__item-img" src="https://s.zagranitsa.com/images/articles/2414/870x486/982da72f20151647c027fb633d8bfb1e.jpg?1450882987" alt="Таблетки">
+                            <p class="subtitle reviews__item-desc">
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore nemo quam, laudantium necessitatibus quidem odit in error maiores provident enim rerum ea praesentium fugiat laboriosam possimus a, ipsum mollitia! Doloremque.
                             </p>
+                        </div>
+                        <div class="reviews__item">
+                            <div class="reviews__item-user">
+                                <img class="reviews__item-user_img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Erast_Garin_2.jpg/250px-Erast_Garin_2.jpg" alt="Эраст">
+                                <p class="subtitle">Эраст Петрович</p>
+                            </div>
+                            <img class="reviews__item-img" src="https://www.ferra.ru/thumb/700x0/filters:quality(75)/imgs/2019/09/21/02/3573479/685e895fe51c29513d8deeb01179ae917a27c170.png" alt="Таблетки">
+                            <p class="subtitle reviews__item-desc">
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi, adipisci pariatur quas facilis sequi accusantium earum porro, nam vero expedita minima doloribus quibusdam delectus voluptates obcaecati ipsum labore provident placeat!
+                            </p>
+                        </div>
+                        <div class="reviews__item">
+                            <div class="reviews__item-user">
+                                <img class="reviews__item-user_img" src="https://news102.ru/wp-content/uploads/2020/11/morgenshtern-696x691.png" alt="MORGENSHTERN">
+                                <p class="subtitle">Моргенштерн</p>
+                            </div>
+                            <img class="reviews__item-img" src="https://img.tyt.by/n/afisha/00/f/morgenshtrern_photo_2020-06-09_12-00-35.jpg" alt="Таблетки">
+                            <p class="subtitle reviews__item-desc">
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus numquam magni magnam laboriosam laudantium ex doloribus, maxime nostrum beatae doloremque rem quasi enim ipsa ratione, neque ullam sed consequuntur eius.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="promo" id="Promo">
+            <div class="wrapper">
+                <div class="promo__wrapper">
+                    <div class="promo__info">
+                        <img src="img/doctor.png" alt="LevelUp">
+                        <div class="promo__info-characteristics">
+                            <h3 class="title">Характеристики</h3>
+                            <p class="subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem labore veniam eligendi animi tenetur provident omnis dicta eius, quod deserunt mollitia ab totam. Provident quibusdam iusto, laudantium aliquam commodi aperiam!</p>
+                            <p class="subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore labore, culpa corrupti tempore delectus sed in ratione modi unde optio odio dignissimos expedita iusto impedit, ab, laboriosam illum aperiam. Nihil.</p>
+                            <p class="subtitle">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum dolore consequatur velit corrupti, animi laboriosam qui, optio non recusandae obcaecati facilis blanditiis neque? Ullam aspernatur fuga illo. Temporibus, corrupti ratione?</p>
+                        </div>
+                    </div>
+                    <a href="#toOrder" class="toOrderButton">Заказать</a> 
+                </div>
+            </div>
+        </section>
+
+        <section class="toOrder" id="toOrder">
+            <div class="wrapper">
+                <div class="toOrder__wrapper">
+                    <h3 class="title">LevelUp</h3>
+                    <script src="//megatimer.ru/get/7e55368505d2d1ee5c376bad4acb9457.js"></script>
+                    <div class="toOrder__body">
+                        <div class="toOrder__body-info">
+                            <img src="img/prod.png" alt="LevelUp">
+                            <p class="toOrder__body-info_newPrice">
+                                2999
+                            </p>
+                            <p class="toOrder__body-info_oldPrice">
+                                6000 рублей
+                            </p>
+                        </div>
+                        <div class="toOrder__body-item">
+                            <form class="toOrder__body-item_form">
+                                <input type="text" class="toOrder__body-item_form-name subtitle" placeholder="Имя" required name='username'>
+                                <input type="tel" class="toOrder__body-item_form-phone subtitle" placeholder="Телефон" required onKeypress="banTel();">
+                                <a href="#!" class="toOrderButton">Заказать</a>
+                            </form>
                         </div>
                     </div>
                 </div>
@@ -102,15 +173,10 @@
         </section>
 	</main>
 
-	<footer>
-		<div class="wrapper">
-			<div class="footer__wrapper">
-				
-			</div>
-		</div>
-	</footer>
-
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script src="js/owl.carousel.min.js"></script>
 	<script src="js/main.js"></script>
+    <script src="js/jsScroll.js"></script>
 </body>
 
 </html> 
