@@ -1,16 +1,10 @@
 @import "__variables.scss";
 @import "__mixins.scss";
 
-@media screen and (min-width: 1440px) {
-    
-}
-
 @media screen and (max-width: 980px) {
-
     .header {
         display: none;
     }
-
     .about {
         &__wrapper {
             h1 {
@@ -27,7 +21,6 @@
             }
         }
     }
-
     .composition {
         &__info {
             @include flex {
@@ -38,7 +31,6 @@
             }
         }
     }
-
     .about {
         &__wrapper {
             h1 {
@@ -55,7 +47,6 @@
             }
         }
     }
-
     .promo {
         &__info {
             @include flexColumn;
@@ -67,7 +58,6 @@
             }
         }
     }
-
     .toOrder {
         &__body {
             @include flexColumn;
@@ -82,7 +72,6 @@
 }
 
 @media screen and (max-width: 640px) {
-
     .about {
         &__info {
             &-characteristics {
@@ -90,13 +79,11 @@
             }
         }
     }
-
     .composition {
         &__info {
             @include flexColumn;
         }
     }
-
     .promo {
         &__info {
             &-characteristics {
@@ -104,7 +91,6 @@
             }
         }
     }
-
     .toOrder {
         &__body {
             @include flexColumn;
