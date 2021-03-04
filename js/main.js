@@ -1,7 +1,6 @@
 
 $(document).ready(function(){
     $(".reviews-slider").owlCarousel();
-    // $(".combo-slider").owlCarousel();
 });
 
 //reviews slider
@@ -15,7 +14,7 @@ owl.owlCarousel({
     autoplayTimeout:2000,
     autoplayHoverPause:true,
     nav: true,
-    navText: ["<img src='http://s1.iconbird.com/ico/1012/human02/w128h1281349046008back.png'>","<img src='http://s1.iconbird.com/ico/1012/human02/w128h1281349046714gtkgobackrtl.png'>"]
+    navText: ["<img src='http://s1.iconbird.com/ico/1012/human02/w32h321349046008back4.png'>","<img src='http://s1.iconbird.com/ico/1012/human02/w32h321349046714gtkgobackrtl4.png'>"]
 });
 $('.play').on('click',function(){
     owl.trigger('play.owl.autoplay',[1000])
@@ -23,26 +22,6 @@ $('.play').on('click',function(){
 $('.stop').on('click',function(){
     owl.trigger('stop.owl.autoplay')
 })
-
-//combo slider
-
-// var owl = $('.combo-slider');
-// owl.owlCarousel({
-//     items:3,
-//     loop:true,
-//     margin:0,
-//     autoplay:true,
-//     autoplayTimeout:1000,
-//     autoplayHoverPause:true,
-//     nav: true,
-//     navText: ["<img src='../img/sliderNav/mynextimage.png'>","<img src='../img/sliderNav/myprevimage.png'>"]
-// });
-// $('.play').on('click',function(){
-//     owl.trigger('play.owl.autoplay',[1000])
-// })
-// $('.stop').on('click',function(){
-//     owl.trigger('stop.owl.autoplay')
-// })
 
 function banTel() {
     if ((event.keyCode > 31 && event.keyCode < 48) || (event.keyCode > 57 && event.keyCode < 255)) event.returnValue = false;
