@@ -15,7 +15,7 @@ owl.owlCarousel({
     autoplayTimeout:2000,
     autoplayHoverPause:true,
     nav: true,
-    navText: ["<img src='../img/sliderNav/mynextimage.png'>","<img src='../img/sliderNav/myprevimage.png'>"]
+    navText: ["<img src='http://s1.iconbird.com/ico/1012/human02/w128h1281349046008back.png'>","<img src='http://s1.iconbird.com/ico/1012/human02/w128h1281349046714gtkgobackrtl.png'>"]
 });
 $('.play').on('click',function(){
     owl.trigger('play.owl.autoplay',[1000])
