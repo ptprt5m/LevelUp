@@ -157,18 +157,24 @@ html {
   text-align: center;
   align-items: center;
   flex-wrap: wrap;
-  width: 100%;
-  height: auto;
+  max-width: 100%;
 }
-.composition__info-items, .composition__info-item {
+.composition__info-items {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   text-align: center;
   align-items: center;
   flex-wrap: wrap;
+  margin: 0 100px;
 }
 .composition__info-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  align-items: center;
+  flex-wrap: wrap;
   margin-bottom: 50px;
 }
 .composition__info-productsImg {

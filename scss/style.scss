@@ -115,11 +115,13 @@ html {
 	}
 	&__info {
 		@include flex;
-		@include wh(100%);
-		&-items, &-item {
+		max-width: 100%;
+		&-items {
 			@include flexColumn;
+			margin: 0 100px;
 		}
 		&-item {
+			@include flexColumn;
 			margin-bottom: 50px;
 		}
 		&-productsImg {
