@@ -8,8 +8,7 @@ html {
 }
 
 .wrapper {
-  width: 960px;
-  height: auto;
+  max-width: 960px;
   margin: 0 auto;
 }
 
@@ -207,12 +206,10 @@ html {
   margin-bottom: 50px;
 }
 .reviews__items {
-  width: 640px;
-  height: auto;
+  max-width: 640px;
 }
 .reviews__item {
-  width: 640px;
-  height: auto;
+  max-width: 640px;
   background-color: #FFFFFF;
   padding: 40px 40px;
 }
@@ -364,7 +361,7 @@ html {
 .toOrder__body-item_form-name, .toOrder__body-item_form-phone {
   border-radius: 100px;
   padding: 8px 25px;
-  font-size: 24px;
+  font-size: 1.5em;
   border: 0;
   margin-bottom: 30px;
   transition: 0.3s all;

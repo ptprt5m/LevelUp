@@ -96,3 +96,36 @@
     margin: 0;
   }
 }
+@media screen and (max-width: 640px) {
+  .about__info-characteristics {
+    width: 100%;
+  }
+
+  .composition__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .promo__info-characteristics {
+    width: 100%;
+  }
+
+  .toOrder__body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .toOrder__body-info {
+    margin: 0 0 50px 0;
+  }
+  .toOrder__body-item_form-name, .toOrder__body-item_form-phone {
+    font-size: 1em;
+  }
+}

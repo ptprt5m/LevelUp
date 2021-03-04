@@ -81,6 +81,43 @@
     }
 }
 
-@media screen and (max-width: 545px) {
-    
+@media screen and (max-width: 640px) {
+
+    .about {
+        &__info {
+            &-characteristics {
+                width: 100%;
+            }
+        }
+    }
+
+    .composition {
+        &__info {
+            @include flexColumn;
+        }
+    }
+
+    .promo {
+        &__info {
+            &-characteristics {
+                width: 100%;
+            }
+        }
+    }
+
+    .toOrder {
+        &__body {
+            @include flexColumn;
+            &-info {
+                margin: 0 0 50px 0;
+            }
+            &-item {
+                &_form {
+                    &-name, &-phone {
+                        font-size: 1em;
+                    }
+                }
+            }
+        }
+    }
 }
